@@ -1,0 +1,90 @@
+body {
+    background-color: #efefef;
+}
+
+.profile-pic {
+    width: 300px;
+    max-height: 300px;
+    /* display: block; */
+}
+
+.file-upload {
+    display: none;
+}
+
+.circle {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    /* border: 2px solid rgba(240, 46, 46, 0.05); */
+    position: relative; /* Change position to relative */
+    top: 7px; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.p-image {
+    position: relative; /* Change position to relative */
+    top: -30px; /* Adjust as needed */
+    left: 110%; /* Adjust as needed */
+    transform: translateX(-50%); /* Center horizontally */
+    color: #666666;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.p-image:hover {
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.upload-button {
+    font-size: 1.2em;
+}
+
+.upload-button:hover {
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+    color: #999;
+}
+.custom {
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 6px solid pink;
+    z-index: -1;
+    /* display: none; */
+    /* width: 120px; */
+  }
+
+  .hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .borders {
+    border-bottom: 1px solid grey;
+  }
+
+  .male input[type="radio"] {
+    margin-left: 40px;
+  }
+
+  .female input[type="radio"] {
+    margin-left: 30px;
+  }
+
+  input[type=radio]:checked+label .fa {
+    background-image: linear-gradient(to right, pink, #ffffff);
+    background-clip: text;
+    color: transparent;
+    border: 2px solid pink;
+    /* Adjust thickness and color as needed */
+    border-radius: 50%;
+
+  }
