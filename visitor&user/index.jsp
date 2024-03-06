@@ -264,7 +264,7 @@ section {
 						</div>
 						<div>
 							<p class="text-[17px] mt-10">GENERAL ENQUIRES</p>
-							<p class="text-[12px] text-gray-600 mt-2">sampel@gmail.com</p>
+							<p class="text-[12px] text-gray-600 mt-2">vivah@gmail.com</p>
 						</div>
 					</div>
 					<div class="flex space-x-6">
@@ -292,24 +292,24 @@ section {
 						<div class="mb-4">
 							<label for="name" class="block text-gray-700 text-[18px] mb-2">Your
 								Name:</label> <input type="text" id="name" name="name"
-								class="form-input w-full px-4 py-2 rounded-md border border-gray-300 focus:border-pink-500 focus:outline-none"
+								class="form-input w-full px-4 py-2 rounded-md text-[18px] border border-gray-300 focus:border-pink-500 focus:outline-none"
 								required>
 						</div>
 						<div class="mb-4">
 							<label for="email" class="block text-gray-700 text-[18px] mb-2">Your
 								Email:</label> <input type="email" id="email" name="email"
-								class="form-input w-full px-4 py-2 rounded-md border border-gray-300 focus:border-pink-500 focus:outline-none"
+								class="form-input w-full px-4 py-2 rounded-md border text-[18px] border-gray-300 focus:border-pink-500 focus:outline-none"
 								required>
 						</div>
 						<div class="mb-4">
 							<label for="message" class="block text-gray-700 text-[18px] mb-2">Message:</label>
 							<textarea id="message" name="message"
-								class="form-textarea w-full px-4 py-2 rounded-md border border-gray-300 focus:border-pink-500 focus: outline-none h-32"
+								class="form-textarea w-full px-4 py-2 rounded-mdtext-[18px]  border border-gray-300 focus:border-pink-500 focus: outline-none h-32"
 								required></textarea>
 						</div>
 						<div class="text-center">
 							<button type="submit"
-								class="bg-[pink] hover:bg-pink-600 text-white py-2 px-6 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-opacity-75">Send
+								class="bg-[pink] hover:bg-pink-600 text-white py-2 px-6 rounded-xl text-[18px] focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-opacity-75">Send
 								Message</button>
 						</div>
 					</form>
@@ -337,7 +337,7 @@ section {
             });
         });
     </script>
-	<script>
+	<%-- <script>
         // JavaScript to toggle visibility of dropdown content on hover
         const profileTab = document.querySelector('.profile');
     
@@ -350,7 +350,7 @@ section {
             const dropdown = profileTab.querySelector('.absolute');
             dropdown.classList.add('invisible');
         });
-    </script>
+    </script> --%>
 </body>
 
 </html>
