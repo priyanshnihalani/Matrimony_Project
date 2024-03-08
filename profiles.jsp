@@ -24,14 +24,18 @@
 </head>
 <body class="font-[Rubik]">
 	<%
+		StringBuilder concatenatedValues = new StringBuilder();
 		Cookie[] cookies = request.getCookies();
 		String username = null;
+		String gender = null;
 		if (cookies != null) {
 			for (Cookie cookie : cookies) {
 				if (cookie.getName().equals("user")) {
 					//decodedValue = URLDecoder.decode(cookie.getValue(), "UTF-8");
 					username = URLDecoder.decode(cookie.getValue(), "UTF-8");
-					break;
+				}
+				else if(cookie.getName().equals("gender")){
+					gender = URLDecoder.decode(cookie.getValue(), "UTF-8");
 				}
 			}
 		}
@@ -39,15 +43,22 @@
 
 		// Create a list to store the encoded image strings
 		List<String> encodedImageStrings = new ArrayList<>();
+		Connection cn = null;
+		Statement st = null;
+		ResultSet rs = null;
 		try {
-			Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/matrimony", "root", "");
-			Statement st = cn.createStatement();
-			ResultSet rs;
-
+			cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/matrimony", "root", "");
+			st = cn.createStatement();
+			String query = "";
+			if(gender.equals("male")){
+				query = "select imagepath, firstname, surname, dob, city, occupation, hobbies, relegion, cast from signup where gender = 'female'";
+			}
+			else if(gender.equals("female")){
+				query = "select imagepath, firstname, surname, dob, city, occupation, hobbies, relegion, cast from signup where gender = 'male'";
+			}
+			rs = st.executeQuery(query);
 			//if()
-			rs = st.executeQuery(
-					"select imagepath, firstname, surname, dob, city, occupation, hobbies, relegion, cast from signup");
-			StringBuilder concatenatedValues = new StringBuilder();
+			
 	%>
 
 	<h1 class="text-center font-bold text-[28px] mt-10 ">

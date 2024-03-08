@@ -21,7 +21,7 @@
 
     try {
         cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/matrimony", "root", "");
-        st = cn.prepareStatement("select gender from signup where email = ? and password = ?");
+        st = cn.prepareStatement("select * from signup where email = ? and password = ?");
         st.setString(1, email);
         st.setString(2, password);
 
@@ -33,6 +33,11 @@
         // Check if insertion was successfull
         if (rs.next()) {
             // Setting up cookie
+            String gender = rs.getString("gender");
+            Cookie genderCookie = new Cookie("gender", gender);
+            genderCookie.setMaxAge(60 * 60 * 24 * 30); // 30 days
+            response.addCookie(genderCookie);
+
             Cookie cookie = new Cookie("user", encodedValue);
             cookie.setMaxAge(60 * 60 * 24 * 30); // 30 days
             response.addCookie(cookie);

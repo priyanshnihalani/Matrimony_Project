@@ -8,11 +8,10 @@
 <title>Index</title>
 <link rel="shortcut icon" href="project1logo.ico" type="image/x-icon">
 <link rel="stylesheet" href="output.css">
-  <%-- <script src="https://cdn.tailwindcss.com"></script> --%>
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet"
-	href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link
@@ -69,21 +68,18 @@ section {
     			if (<%=username%> == null) {
     				let disp = document.getElementById("profile");
     				disp.style.display="none";
-    				//alert("<%=username%>");
     			}
-    			//var disp = document.getElementByClassName("profile");
-    			//disp.style.display = "none"
-    			
     		}
     			
     	</script>
 	<section id="home">
 		<header class="h-[150px]">
 			<nav>
-				<ul class="2xl: flex space-x-12  items-center  mt-9 ">
+				<ul class="xl:flex xl:h-[100px] xl:space-x-12 xl:text-[18px] xl:none xl:mt-9 lg:flex lg:space-x-8 lg:text-[14px] xl:items-center 
+				lg:items-center md:items-center lg:justify-center lg:h-[100px] md:flex md:space-x-4 md:text-[13px] md:h-[240px] md:justify-center ">
 					<!-- Removed align-middle -->
-					<li class=" 2xl: mr-[250px] ml-[180px] "><img
-						src="project1logo.png" alt="" width="200px"></li>
+					<li class="md:w-[120px] md:absolute md:top-0 md:mt-[30px] xl:w-[220px] xl:relative xl:mr-[180px] xl:ml-[120px] lg:ml-[50px] lg:mr-[80px] lg:relative"><img
+						src="project1logo.png" alt="" class="xl:w-[200px] lg:w-[180px] "></li>
 					<li class="hover:text-[pink] cursor-pointer"><a href="#home">HOME</a></li>
 					<li class="hover:text-[pink] cursor-pointer"><a href="#whyus">WHY
 							US</a></li>
@@ -96,7 +92,7 @@ section {
 					<li class="hover:text-[pink] cursor-pointer border-2 p-3 profile"
 						id="profile">PROFILE
 						<div
-							class="absolute right-0 mt-4 w-40 bg-white border rounded-md shadow-lg invisible">
+							class="absolute xl:right-0 lg:right-[140px] mt-4 w-40 bg-white border rounded-md shadow-lg invisible">
 							<div class="py-2">
 								<!-- User Name -->
 								<p class="block px-4 py-2 text-[pink] text-sm font-semibold"><%=username%></p>
@@ -116,25 +112,25 @@ section {
 		</header>
 	</section>
 	<main>
-	<div class="flex">
-		<div
-			class="img h-[430px] w-[35%] bg-slate-500 mt-[70px] ml-[180px] flex"></div>
-		<div class="mt-[130px] ml-8 w-[50%] ">
-			<p class="text-[20px] text-[gray] mt-[30px]">The Best for Bride
+	<div class="flex xl:p-0 lg:p-0 md:pt-6">
+		<div class="img xl:h-[430px] xl:w-[35%] bg-slate-500 xl:mt-[70px] xl:ml-[180px] xl:flex lg:flex lg:h-[350px] lg:w-[35%] lg:mt-[100px] lg:ml-[150px] md:w-[40%] md:h-[250px] md:ml-[100px] "></div>
+		<div class="xl:mt-[130px] lg:mt-[130px] xl:ml-8 lg:ml-8 md:mt-[50px] md:ml-8 w-[50%]">
+			<p class="xl:text-[20px] text-[gray] xl:mt-[30px] lg:text-[16px] md:text-[12px] ">The Best for Bride
 				and Groom</p>
-			<p class="text-[60px] mt-0 text-[pink]">Trusted and Efficient
+			<p class="xl:text-[60px] mt-0 text-[pink] lg:text-[40px] md:text-[25px]">Trusted and Efficient
 				Matrimonial Bureaus</p>
 			<form action="profileprocess.jsp" method="post">
 				<input type="submit" value="Find Your Match"
-					class=" cursor-pointer border-[2px] border-[slate-500] py-[12px] px-[15px] mt-2 text-[black]">
+					class=" cursor-pointer border-[2px] border-[slate-500]  mt-2 text-[black] md:text-[12px] md:px-[11px] md:py-[11px]
+					xl:py-[12px]  xl:px-[15px] lg:py-[12px] lg:px-[15px] xl:text-[18px] lg:text-[15px]">
 			</form>
 		</div>
 	</div>
 	<section id="whyus">
-		<div class="w-full justify-center mt-[120px] text-[22px] ">
+		<div class="w-full xl:justify-center mt-[120px] text-[22px] ">
 			<h1 class="text-center relative top-10">WHY US?</h1>
-			<div class="flex space-x-8 justify-center mt-10">
-				<div class="card w-[300px] mt-[30px]  ">
+			<div class="flex xl:space-x-6 justify-center mt-10 flex-wrap">
+				<div class="card w-[300px] mt-[30px]">
 					<p class="text-[18px] font-bold text-[pink] text-center">Database
 						of Millions of User</p>
 					<p class="text-[16px] text-[gray] mt-6 w-[250px] mx-auto ">We
@@ -173,8 +169,8 @@ section {
 		<div class="w-full justify-center mt-[120px] text-[22px] ">
 			<h1 class="text-center relative top-7 ">ABOUT US</h1>
 			<div class="flex">
-				<div class="w-[42%] mt-[70px] ml-[150px] p-2 ">
-					<span class="text-[pink] text-[28px]">Welcome to our
+				<div class="w-[42%] xl:mt-[150px] xl:ml-[150px] lg:mt-[100px] lg:ml-[90px] p-2 lg:text-[18px] md:text-[14px] md:ml-[50px] md:mt-[70px]">
+					<span class="text-[pink] xl:text-[28px] lg:text-[24px] md:text-[18px]">Welcome to our
 						matrimony website, where hearts unite and stories begin. </span> We are
 					dedicated to fostering meaningful connections and helping
 					individuals find their perfect match. With a commitment to
@@ -188,7 +184,7 @@ section {
 					the beautiful adventure of finding love and companionship that
 					lasts a lifetime.
 				</div>
-				<div class="img1 w-[30%] h-[450px] mt-[100px] ml-[150px] "></div>
+				<div class="img1 xl:w-[30%] xl:h-[450px] xl:mt-[100px] xl:ml-[150px] lg:ml-[100px] lg:w-[35%] lg:h-[350px] lg:mt-[150px] md:w-[40%] md:h-[250px] md:mt-[120px] md:ml-[50px]"></div>
 			</div>
 		</div>
 		</div>
@@ -247,14 +243,14 @@ section {
 		<div class="w-full justify-center mt-[100px] text-[22px] mb-[100px] ">
 			<h1 class="text-center relative top-7 ">CONTACT US</h1>
 			<div class="flex">
-				<div class="w-[30%] mt-[70px] ml-[260px] p-2 bg-gray-000">
+				<div class="xl:w-[30%] lg:w-[30%] md:w-[40%] mt-[70px] xl:ml-[260px] p-2 bg-gray-000 lg:ml-[160px] md:ml-[80px]">
 					<div class="flex space-x-6">
-						<div class="bg-gray-500  mt-12 h-0 text-[50px] text-[pink]">
+						<div class="bg-gray-500 mt-12 h-0 text-[50px] text-[pink]">
 							<i class="fa fa-location-arrow ml-4"></i>
 						</div>
 						<div>
-							<p class="text-[17px] mt-[60px]">OUR OFFICE ADDERSS</p>
-							<p class="text-[12px] text-gray-600 mt-2">Malad-West, Mumbai,
+							<p class="xl:text-[17px] lg:text-[15px] md:text-[13px] mt-[60px]">OUR OFFICE ADDERSS</p>
+							<p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-gray-600 mt-2 md:mt-1">Malad-West, Mumbai,
 								40004</p>
 						</div>
 					</div>
@@ -263,8 +259,8 @@ section {
 							<i class="fa fa-envelope ml-4"></i>
 						</div>
 						<div>
-							<p class="text-[17px] mt-10">GENERAL ENQUIRES</p>
-							<p class="text-[12px] text-gray-600 mt-2">sampel@gmail.com</p>
+							<p class="xl:text-[17px] lg:text-[15px] md:text-[13px] md:mt-[40px] mt-[60px]">GENERAL ENQUIRES</p>
+							<p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-gray-600 mt-2 md:mt-1">sampel@gmail.com</p>
 						</div>
 					</div>
 					<div class="flex space-x-6">
@@ -272,8 +268,8 @@ section {
 							<i class="fa fa-phone ml-4"></i>
 						</div>
 						<div>
-							<p class="text-[17px] mt-10">CALL US</p>
-							<p class="text-[12px] text-gray-600 mt-2">+91-1234567890</p>
+							<p class="xl:text-[17px] lg:text-[15px] md:text-[13px] md:mt-[40px] mt-[60px]">CALL US</p>
+							<p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-gray-600 mt-2 md:mt-1">+91-1234567890</p>
 						</div>
 					</div>
 					<div class="flex space-x-6">
@@ -281,13 +277,13 @@ section {
 							<i class="fa fa-clock-o ml-4"></i>
 						</div>
 						<div>
-							<p class="text-[17px] mt-10">OUR TIMINGS</p>
-							<p class="text-[12px] text-gray-600 mt-2">MON - SAT : 10:00
+							<p class="xl:text-[17px] lg:text-[15px] md:text-[13px] md:mt-[40px] mt-[60px]">OUR TIMINGS</p>
+							<p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-gray-600 mt-2 md:mt-1">MON - SAT : 10:00
 								AM - 07:00 PM</p>
 						</div>
 					</div>
 				</div>
-				<div class="w-[30%] h-[450px] mt-[100px] ml-[150px] ">
+				<div class="xl:w-[30%] h-[450px] mt-[100px] xl:ml-[150px] lg:ml-[100px] md:ml-[30px] bg-gray-000 md:w-[40%] ">
 					<form action="contactus.jsp" method="POST">
 						<div class="mb-4">
 							<label for="name" class="block text-gray-700 text-[18px] mb-2">Your

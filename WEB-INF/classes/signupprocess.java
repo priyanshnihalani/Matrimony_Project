@@ -58,6 +58,9 @@ public class signupprocess extends HttpServlet {
                 cookie.setMaxAge(60 * 60 * 24 * 30); // 30 days
                 response.addCookie(cookie);
 
+                Cookie genderCookie = new Cookie("gender", gender);
+                genderCookie.setMaxAge(60 * 60 * 24 * 30); // 30 days
+                response.addCookie(genderCookie);
                 // Redirect to home page upon successful insertion
                 response.sendRedirect("index.jsp");
             } else {
