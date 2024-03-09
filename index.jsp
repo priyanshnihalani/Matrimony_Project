@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Index</title>
-<link rel="shortcut icon" href="project1logo.ico" type="image/x-icon">
+<link rel="shortcut icon" href="projectlogo.ico" type="image/x-icon">
 <link rel="stylesheet" href="output.css">
   <%-- <script src="https://cdn.tailwindcss.com"></script> --%>
 <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
