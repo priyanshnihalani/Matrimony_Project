@@ -9,12 +9,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Feedback</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<%-- <script src="https://cdn.tailwindcss.com"></script> --%>
 <link rel="stylesheet" href="output.css">
 <link rel="icon" type="image" href="project1logo.png">
 <link rel="stylesheet"
 	href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
-<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 <style>
 .rating, .webrating {
 	/* unicode-bidi: bidi-override; */

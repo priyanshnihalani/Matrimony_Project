@@ -6,10 +6,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Sign Up</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<%-- <script src="https://cdn.tailwindcss.com"></script> --%>
 <link rel="shortcut icon" href="project1logo.ico" type="image/x-icon">
 <link rel="stylesheet" href="custom.css">
-<link rel="stylesheet" href="output.css">
+<link href="output.css" rel="stylesheet">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +45,7 @@
 		</div>
 		<form action="http://localhost:8080/Matrimony/signupprocess" method="post" enctype="multipart/form-data">
 			 <form action="SignUp" method="post" enctype="mutipart/form-data">
-			<div class="flex overflow-scroll hide" id="parent ">
+			<div class="flex overflow-scroll hide" id="parent">
 
 				<div class="min-w-full md:text-[18px] lg:text-[16px] xl:text-[16px]">
 					<div class="row">
@@ -213,8 +213,7 @@
 			}
 		});
 	</script>
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function() {
 

@@ -8,7 +8,7 @@
 <title>Index</title>
 <link rel="shortcut icon" href="project1logo.ico" type="image/x-icon">
 <link rel="stylesheet" href="output.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <%-- <script src="https://cdn.tailwindcss.com"></script> --%>
 <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
