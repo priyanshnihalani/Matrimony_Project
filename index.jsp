@@ -42,12 +42,19 @@ nav {
 section {
 	margin-bottom: 30px;
 }
+top
+{
+	bottom:0;
+	right:0;
+	height:50px;
+	width:50px;
+	position: fixed;
+	background-color: red;
+	text-align: center;
+}
 </style>
 </head>
-
 <body class="font-[Rubik]">
-
-
 	<%
 		//String decodedValue = "";
 		Cookie[] cookies = request.getCookies();
@@ -62,7 +69,6 @@ section {
 			}
 		}
 	%>
-
 	<script>
     		window.onload = function(){
     			if (<%=username%> == null) {
@@ -72,6 +78,7 @@ section {
     		}
     			
     	</script>
+		<!-- <top><a href="#home">TOP</a></top> -->
 	<section id="home">
 		<header class="h-[150px]">
 			<nav>

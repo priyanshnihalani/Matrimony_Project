@@ -6,10 +6,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Sign Up</title>
-<%-- <script src="https://cdn.tailwindcss.com"></script> --%>
+<script src="https://cdn.tailwindcss.com"></script>
 <link rel="shortcut icon" href="project1logo.ico" type="image/x-icon">
 <link rel="stylesheet" href="custom.css">
-<link href="output.css" rel="stylesheet">
+<link rel="stylesheet" href="output.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,6 +44,7 @@
 
 		</div>
 		<form action="http://localhost:8080/Matrimony/signupprocess" method="post" enctype="multipart/form-data">
+			 <form action="SignUp" method="post" enctype="mutipart/form-data">
 			<div class="flex overflow-scroll hide" id="parent">
 
 				<div class="min-w-full md:text-[18px] lg:text-[16px] xl:text-[16px]">
@@ -63,7 +64,7 @@
 					<input type="text" name="firstname" placeholder="First name" class=" xl:p-2 lg:p-2 flex-1 xl:w-[190px] xl:m-3 xl:-mt-[10px] xl:mr-0 rounded-lg lg:w-[190px] lg:m-3 lg:mt-1 lg:mb-1 lg:mr-0 md:ml-3 md:w-[220px] md:p-3 xl:border-2 lg:border-2 md:border-[3px]" required>
 						 <input type="text" name="surname" placeholder="Surname" class=" md:border-[3px] xl:p-2 lg:p-2 xl:w-[170px] xl:ml-1 xl:-mt-[10px] xl:mr-0 rounded-lg lg:w-[170px] lg:ml-1 lg:mt-1 lg:mb-1 lg:mr-0 md:ml-3 md:w-[210px] md:p-3 xl:border-2 lg:border-2" required> 
 						 <input type="email" name="email" placeholder="E-mail" class="xl:p-2 lg:p-2 border-2 p-2 flex-1 xl:w-[368px] xl:m-3 xl:mt-1 xl:-mt-[10px] xl:mr-1 rounded-lg lg:w-[368px] lg:m-3 lg:mt-1 lg:mb-1 lg:mr-1 md:ml-3 md:w-[450px] md:ml-2 md:mt-3 md:p-3 xl:border-2 lg:border-2" required> 
-						<input type="password" name="password" placeholder="Enter Password" class="xl:p-2 lg:p-2 xl:border-2 lg:border-2 p-2 flex-1 xl:w-[368px] xl:m-3 xl:mt-1 xl:-mt-[10px] xl:mr-1 rounded-lg lg:w-[368px] lg:m-3 lg:mt-1 lg:mb-1 lg:mr-1 md:ml-3 md:w-[450px] md:ml-2 md:mt-3 md:p-3 md:border-[3px]" required>
+						<input type="password" id="password" name="password" placeholder="Enter Password" class="xl:p-2 lg:p-2 xl:border-2 lg:border-2 p-2 flex-1 xl:w-[368px] xl:m-3 xl:mt-1 xl:-mt-[10px] xl:mr-1 rounded-lg lg:w-[368px] lg:m-3 lg:mt-1 lg:mb-1 lg:mr-1 md:ml-3 md:w-[450px] md:ml-2 md:mt-3 md:p-3 md:border-[3px]" required>
 
 					<p class=" mt-[10px] xl:ml-3 xl:mt-3 xl:mb-1 text-[14px] lg:mt-2 lg:ml-3 md:mt-5 md:ml-3 md:mb-1">Data of Birth</p>
 					<select name="date" id="" class=" md:border-[3px] xl:border-2 lg:border-2 xl:ml-2 xl:w-[120px] xl:p-1 rounded-lg lg:ml-2 lg:p-1 lg:w-[120px] md:ml-4 md:w-[140px] md:p-2">
@@ -158,10 +159,11 @@
 						class=" md:border-[3px] xl:border-2 lg:border-2 xl:p-2 lg:p-2 border-2 p-2 flex-1 xl:w-[368px] xl:m-3 xl:mt-2 xl:-mt-[10px] xl:mr-1 rounded-lg lg:w-[368px] lg:m-3 lg:mt-2 lg:mb-1 lg:mr-1 md:ml-3 md:w-[450px] md:ml-2 md:mt-3 md:p-3" required>
 						<input type="text" name="occupation"
 						placeholder="Occupation"
-						class=" md:border-[3px] xl:border-2 lg:border-2 xl:p-2 lg:p-2 border-2 p-2 flex-1 xl:w-[368px] xl:m-3 xl:mt-1 xl:-mt-[10px] xl:mr-1 rounded-lg lg:w-[368px] lg:m-3 lg:mt-1 lg:mb-1 lg:mr-1 md:ml-3 md:w-[450px] md:ml-2 md:mt-3 md:p-3"
+						class=" md:border-[3px] xl:border-2 lg:border-2 xl:p-2 lg:p-2 border-2 p-2 flex-1 xl:w-[368px] xl:m-3 xl:mt-1 xl:-mt-[10px] xl:mr-1 rounded-lg lg:w-[368px] lg:m-3 lg:mt-1 lg:mb-1 lg:mr-1 md:ml-3 md:w-[450px] md:ml-2 md:mt-3 md:p-3" required>
 
-						class=" md:border-[3px] xl:border-2 lg:border-2 xl:p-2 lg:p-2 border-2 p-2 flex-1 xl:w-[368px] xl:m-3 xl:mt-1 xl:-mt-[10px] xl:mr-1 rounded-lg lg:w-[368px] lg:m-3 lg:mt-1 lg:mb-1 lg:mr-1 md:ml-3 md:w-[450px] md:ml-2 md:mt-3 md:p-3"
-						required> 
+						<input type="text" name="hobbies"
+						placeholder="Hobbies"
+						class=" md:border-[3px] xl:border-2 lg:border-2 xl:p-2 lg:p-2 border-2 p-2 flex-1 xl:w-[368px] xl:m-3 xl:mt-1 xl:-mt-[10px] xl:mr-1 rounded-lg lg:w-[368px] lg:m-3 lg:mt-1 lg:mb-1 lg:mr-1 md:ml-3 md:w-[450px] md:ml-2 md:mt-3 md:p-3" required>
 						<select name="religion"
 						class="  md:border-[3px] xl:border-2 lg:border-2 xl:p-2 lg:p-2 border-2 p-2 flex-1 xl:w-[368px] xl:m-3 xl:mt-1 xl:-mt-[10px] xl:mr-1 rounded-lg lg:w-[368px] lg:m-3 lg:mt-1 lg:mb-1 lg:mr-1 md:ml-3 md:w-[450px] md:ml-2 md:mt-3 md:p-3"
 						required>
@@ -212,7 +214,8 @@
 			}
 		});
 	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function() {
 
@@ -236,6 +239,16 @@
 				$(".file-upload").click();
 			});
 		});
+	</script>
+	<script>
+		var button = document.querySelector("input[type=submit]");
+		button.addEventListener("click", (e) => {
+			var password = document.querySelector("#password").value;
+			if(password.length != 6){
+				e.preventDefault();
+				alert("Enter password of 6 letters")
+			}
+		})
 	</script>
 
 </body>
