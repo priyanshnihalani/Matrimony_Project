@@ -17,14 +17,4 @@
         <url-pattern>/signupprocess</url-pattern>
     </servlet-mapping>
 
-<servlet>
-        <servlet-name>HelloWorldExample</servlet-name>
-        <servlet-class>HelloWorldExample</servlet-class>
-    </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>HelloWorldExample</servlet-name>
-        <url-pattern>/HelloWorldExample</url-pattern>
-    </servlet-mapping>
-
 </web-app>

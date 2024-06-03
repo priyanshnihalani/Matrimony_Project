@@ -43,8 +43,7 @@
 			</div>
 
 		</div>
-		<form action="http://localhost:8080/Matrimony/signupprocess" method="post" enctype="multipart/form-data">
-			 <form action="SignUp" method="post" enctype="mutipart/form-data">
+		<form action="http://localhost:8080/Matrimony_Project/signupprocess" method="post" enctype="multipart/form-data">
 			<div class="flex overflow-scroll hide" id="parent">
 
 				<div class="min-w-full md:text-[18px] lg:text-[16px] xl:text-[16px]">
@@ -187,8 +186,8 @@
 					</div>
 		</form>
 	</div>
-	</div>
-	</div>
+	<!-- </div>
+	</div> -->
 
 	<script>
 		const checkbox1 = document.getElementById('check1');

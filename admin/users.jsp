@@ -118,8 +118,8 @@
             </td>
         </tr>
         <script>
-    function deleteUser(userId) {
-        window.location.href = "deleteuser.jsp?id=" + userId;
+    function deleteUser(id) {
+        window.location.href = "deleteuser.jsp?id=" + id;
     }
 
     function updateUser(id) {
@@ -149,11 +149,9 @@
         var encodedHobbies = encodeURIComponent(newhobbies);
         var encodedRelegion = encodeURIComponent(newrelegion);
         var encodedCast = encodeURIComponent(newcast);
-        // Encode more fields as needed
 
         // Construct the update URL
         var updateUrl = "updateuser.jsp?id=" + id + "&firstname=" + encodedFirstname + "&surname=" + encodedSurname + "&email=" + encodedEmail + "&password=" + encodedPassword + "&dob=" + encodedDob + "&gender=" + encodedGender + "&city=" + encodedCity + "&occupation=" + encodedOccupation + "&hobbies=" + encodedHobbies + "&relegion=" + encodedRelegion + "&cast=" + encodedCast;
-        // Append more fields to the URL as needed
 
         // Redirect to the update URL
         window.location.href = updateUrl;
